@@ -208,6 +208,22 @@ LogVar 弹幕 API 服务器
 - Settings > Functions > Advanced Setting > Function Region 切换为 新加坡/韩国/日本等，能提高访问速度，体验更优
   > hk有可能访问不了360或其他源，可以尝试切其他region
 - vercel在国内被墙，请配合代理或绑定自定义域名使用
+- 
+### 一键部署到 Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mrliergou/danmu_api&project-name=danmu_api&repository-name=danmu_api)
+
+**部署步骤：**
+1. 点击上方按钮登录 Vercel；
+2. 点击 “Continue → Deploy”；
+3. 部署完成后，访问你的项目域名测试接口；
+4. （可选）在 Settings → Environment Variables 中添加环境变量：
+   - Name：`TOKEN`
+   - Value：`87654321`（或你自定义的令牌）；
+5. 保存后点击 “Redeploy”；
+6. （可选）在 Settings → Functions → Advanced Settings 中，将 **Function Region** 改为 `sin1`（新加坡）或 `icn1`（韩国），提高访问速度。
+
+**测试请求示例：**
 
 ## 部署到 Netlify 【推荐】
 
